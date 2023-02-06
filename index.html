@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Randy's website </title>
+    </head>
+    <body>
+        <!-- title on the page -->
+        <h1>Inspection Calculator</h1>
+
+        <!-- actual program -->
+        <div>
+            <h4>Enter the time of your last inspection</h4>
+            <input id="LastInspectionImpt" type="time"> 
+            <br>
+            <h4>Down time/ Break/ Lunch</h4>
+            <input id="downTimeImpt" type="time">
+
+                <h4>Production resumed</h4>
+            <input id="resumedImpt" type="time">
+            <br>
+            <br>
+            <button id="submitBtn">Submit</button>
+        </div>
+
+        <!-- display time when imspection is due-->
+        <h3>Your next inspection is at:</h3>
+        <p id="inspectionDue">00:00:00</p>
+        <script src="script.js"></script>
+        </body>
+</html>
