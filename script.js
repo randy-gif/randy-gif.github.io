@@ -64,11 +64,8 @@ document.getElementById("submitBtn")
      downTime, timeResumed) + ((hours *
      60) + minutes) + 60;
    if (totalMinutes >= 60) {
-   alert(totalMinutes);
    totalHours = Math.floor(totalMinutes / 60);
-   alert(totalHours)
    totalMinutes = totalMinutes % 60;
-   alert(totalMinutes);
    /* while (totalMinutes > 60) {
      totalMinutes -= 60;
      totalHours += 1;
