@@ -1,5 +1,9 @@
+body{
+  background-color: #202124;
+}
 .container {
-  height: 400px;
+ 
+  height: 90px;
   position: relative;
 }
 
@@ -11,28 +15,49 @@
   transform: translate(-50%, -50%);
 }
 
+.error{
+  font-size: 13px;
+  display: none;
+  color: crimson;
+}
+
 input {
-width: 60vw;
+  border-radius: 20px;
+  border: 4px white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.816);
+  color: #9aa0a6;
+  width: 60vw;
 }
 p {
- text-align: center;
+  color: white;
+  text-align: center;
 }
 h1 {
- text-align: center;
+  color: white;
+  text-align: center;
 }
 h4 {
- text-align: center;
+  color: whitesmoke;
+  text-align: center;
 }
 h3 {
- text-align: center;
+  color: white;
+  text-align: center;
 }
 button{
-font-size: 20px;
-text-align: center;
-width: 60vw;
-height: 10vh;
-
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  width: 60vw;
+  height: 15vh;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:active{
+  background-color: #9aa0a6;
 }
 #inspectionDue{
-font-size: 40px;
+  font-size: 40px;
+  font-weight: bold;
 }
