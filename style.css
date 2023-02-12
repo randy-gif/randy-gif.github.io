@@ -2,8 +2,7 @@ body{
   background-color: #202124;
 }
 .container {
- 
-  height: 90px;
+  height: 120px;
   position: relative;
 }
 
@@ -22,8 +21,10 @@ body{
 }
 
 input {
+  position:relative;
   border-radius: 20px;
-  border: 4px white;
+  border: 6px white;
+  height: 7vh;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.816);
   color: #9aa0a6;
@@ -50,7 +51,7 @@ button{
   text-align: center;
   font-weight: bold;
   width: 60vw;
-  height: 15vh;
+  height: 12vh;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -60,4 +61,7 @@ button:active{
 #inspectionDue{
   font-size: 40px;
   font-weight: bold;
+}
+#addMoreTime{
+  display: none;
 }
