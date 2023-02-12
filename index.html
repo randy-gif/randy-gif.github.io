@@ -5,39 +5,56 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
 <!-- title on the page -->
- <h1>Inspection Calculator</h1>
- 
+  <h1>Inspection Calculator</h1>
+  <br>
+  <br>
  <!-- actual program -->
- <div class="container">
- 
- <h4>Enter time of last inspection</h4>
- <div class="center">
- <input id="LastInspectionImpt" type="time"> 
- </div>
- <br>
- <h4>Down time/ Break/ Lunch</h4>
- <div class="center">
- <input id="downTimeImpt" type="time">
- </div>
- <br>
-  <h4>Production resumed</h4>
-  <div class="center">
- <input id="resumedImpt" type="time">
- </div>
- <br>
- <br>
- <br>
- <div class="center">
- <button id="submitBtn">Submit</button>
- </div>
- </div>
- 
- <!-- display time when imspection is due-->
- <div>
- <h3>Your inspection is dues at:</h3>
- <p id="inspectionDue"><strong> ... </strong> </p>
- </div>
- <script src="script.js"></script>
+  <div class="container">
+    <div class="center">
+      <h4>Enter time of last inspection</h4>
+      <input id="LastInspectionImpt" type="time"> 
+      <input id="lastInspectionDate" type="date">
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="center">
+      <h4>Down time/ Break/ Lunch</h4>
+      <input id="downTimeImpt" type="time">
+      <input id="donwTimeDate" type="date">
+      <p class="error" id="downTimeError"></p>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="center">
+      <h4>Production resumed</h4>
+      <input id="resumedImpt" type="time">
+      <input id="timeResumedDate" type="date">
+      <p class="error" id="ProductionResumedError"></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="center">
+      <p class="error" id="BlankError"></p>
+      <button id="submitBtn">Submit</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- display time when imspection is due-->
+  <div class="container">
+    <div class="center">
+      <h3>Your inspection is dues at:</h3>
+      <p id="inspectionDue"></p>
+    </div>
+  </div>
+  <script src="main.js" type="module"></script>
 </body>
 </html>
