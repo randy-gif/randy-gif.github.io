@@ -10,28 +10,45 @@
   <h1>Inspection Calculator</h1>
   <br>
   <br>
+  <br>
+  <br>
+  <br>
  <!-- actual program -->
+ 
   <div class="container">
     <div class="center">
       <h4>Enter time of last inspection</h4>
       <input id="LastInspectionImpt" type="time"> 
+      <br>
+      <br>
       <input id="lastInspectionDate" type="date">
+      <p class="error" id="lastInspectionError"></p>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
   <br>
   <div class="container">
     <div class="center">
       <h4>Down time/ Break/ Lunch</h4>
       <input id="downTimeImpt" type="time">
+      <br>
+      <br>
       <input id="donwTimeDate" type="date">
       <p class="error" id="downTimeError"></p>
     </div>
   </div>
   <br>
+  <br>
+  <br>
+  <br>
   <div class="container">
     <div class="center">
       <h4>Production resumed</h4>
       <input id="resumedImpt" type="time">
+      <br>
+      <br>
       <input id="timeResumedDate" type="date">
       <p class="error" id="ProductionResumedError"></p>
     </div>
@@ -48,13 +65,24 @@
   <br>
   <br>
 
-  <!-- display time when imspection is due-->
+  <!-- Add more time -->
   <div class="container">
     <div class="center">
       <h3>Your inspection is dues at:</h3>
       <p id="inspectionDue"></p>
     </div>
   </div>
+  <br>
+  <br>
+  <div id="addMoreTime" class="container">
+    <div class="center">
+      <p>Do you have more down time? click the button below</p>
+      <button id="addMoreBtn">Add More</button>
+    </div>
+  </div>
+
+
+
   <script src="main.js" type="module"></script>
 </body>
 </html>
