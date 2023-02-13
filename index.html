@@ -9,77 +9,79 @@
 <!-- title on the page -->
   <h1>Inspection Calculator</h1>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
  <!-- actual program -->
  
-  <div class="container">
-    <div class="center">
+  <div class="containerForImput">
+    <div class="centerForHeading">
       <h4>Enter time of last inspection</h4>
+    </div>
+    <div class="centerForTimeImput">
       <input id="LastInspectionImpt" type="time"> 
-      <br>
-      <br>
+    </div>
+    <div class="centerForDateImput">
       <input id="lastInspectionDate" type="date">
+    </div>
+    <div class="centerForError">
       <p class="error" id="lastInspectionError"></p>
     </div>
   </div>
   <br>
-  <br>
-  <br>
-  <br>
-  <div class="container">
-    <div class="center">
-      <h4>Down time/ Break/ Lunch</h4>
-      <input id="downTimeImpt" type="time">
-      <br>
-      <br>
+  <div class="containerForImput">
+    <div class="centerForHeading">
+      <h4>Down time/ Break/ Lunch</h4> 
+    </div>
+    <div class="centerForTimeImput">
+      <input id="downTimeImpt" type="time">   
+    </div>
+    <div class="centerForDateImput">
       <input id="donwTimeDate" type="date">
+    </div>
+    <div class="centerForError">
       <p class="error" id="downTimeError"></p>
     </div>
   </div>
   <br>
-  <br>
-  <br>
-  <br>
-  <div class="container">
-    <div class="center">
-      <h4>Production resumed</h4>
-      <input id="resumedImpt" type="time">
-      <br>
-      <br>
+  <div class="containerForImput">
+    <div class="centerForHeading">
+      <h4>Production resumed</h4>    
+    </div>
+    <div class="centerForTimeImput">
+      <input id="resumedImpt" type="time">   
+    </div>
+    <div class="centerForDateImput">
       <input id="timeResumedDate" type="date">
+    </div>
+    <div class="centerForError">
       <p class="error" id="ProductionResumedError"></p>
     </div>
   </div>
-  <br>
-  <br>
-  <div class="container">
-    <div class="center">
-      <p class="error" id="BlankError"></p>
+  <div class="containerForButton">
+    <div class="centerForButton">
       <button id="submitBtn">Submit</button>
     </div>
+    <div class="centerForError">
+      <p class="error" id="BlankError"></p>
+    </div>
   </div>
-  <br>
-  <br>
-  <br>
-
-  <!-- Add more time -->
-  <div class="container">
-    <div class="center">
-      <h3>Your inspection is dues at:</h3>
+  <div class="containerForNextInspection">
+    <div class="centerForNextHeading">
+      <h4>Your inspection is at:</h4>
+    </div>
+    <div class="centerForNextInspection">
       <p id="inspectionDue"></p>
     </div>
   </div>
   <br>
-  <br>
-  <div id="addMoreTime" class="container">
-    <div class="center">
+
+  <!-- Add more time 
+  <div id="addMoreTime" class="containerForMoreDownTime">
+    <div class="centerForAddText">
       <p>Do you have more down time? click the button below</p>
+    </div>
+    <div class="centerForAddButton">
       <button id="addMoreBtn">Add More</button>
     </div>
-  </div>
+  </div> -->
 
 
 
