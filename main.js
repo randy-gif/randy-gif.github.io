@@ -50,13 +50,14 @@ document.getElementById("submitBtn").onclick = () => {
         else if(error instanceof LastInspectionError){
             document.getElementById("lastInspectionError").style.display = "block";
             document.getElementById("lastInspectionError").innerText =`${error.name}: ${error.message}`;
+            return 0;
         }
     }
     // ask the user if they want to add more down time
     document.getElementById("addMoreTime").style.display = "block";
 
 
-    // chance paragraph to when next inspection is due
+    // change paragraph to when next inspection is due
 
     document.getElementById("inspectionDue").innerText = 
     nextInspection.formatTime(nextInspection.CalculateNextInspection(lastInspection, downTime, timeResumed))
