@@ -54,7 +54,6 @@ document.getElementById("submitBtn").onclick = () => {
         }
     }
     // ask the user if they want to add more down time
-    document.getElementById("addMoreTime").style.display = "block";
 
 
     // change paragraph to when next inspection is due
@@ -63,18 +62,7 @@ document.getElementById("submitBtn").onclick = () => {
     nextInspection.formatTime(nextInspection.CalculateNextInspection(lastInspection, downTime, timeResumed))
  };
 
- document.getElementById("addMoreBtn").onclick = () =>{
-
-    // Get elements and assgin them
-    let lastInspectionTime = document.getElementById("LastInspectionImpt");
-    let downTimeTime = document.getElementById("downTimeImpt");
-    let timeResumedTime = document.getElementById("resumedImpt");
-    let lastInspectionDate = document.getElementById("lastInspectionDate");
-    let downTimeDate = document.getElementById("donwTimeDate");
-    let timeResumedDate = document.getElementById("timeResumedDate");
-
-    alert("Coming soon!")
- };
+ 
 
  function convertToDateObj(timeStr, dateStr){
     let hourStr = timeStr.value[0] + timeStr.value[1];
