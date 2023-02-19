@@ -1,5 +1,8 @@
 body{
-  background-color: #202124;
+  background-color: #1e1d1e;
+}
+#addMoretimeText{
+  display: none;
 }
 .containerForImput {
   height: 200px;
@@ -15,7 +18,6 @@ body{
   transform: translate(-50%, -50%);
 }
 .centerForTimeImput {
-  background-color: #202124;
   margin: 0;
   position: absolute;
   left: 50%;
@@ -24,7 +26,6 @@ body{
   transform: translate(-50%, -50%);
 }
 .centerForDateImput {
-  background-color: #202124;
   margin: 0;
   position: absolute;
   left: 50%;
@@ -55,6 +56,7 @@ body{
   transform: translate(-50%, -50%);
 }
 .containerForNextInspection{
+  display: none;
   height: 100px;
   position: relative;
 }
@@ -84,12 +86,8 @@ body{
 }
 
 .containerForMoreDownTime{
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  top: 50% ;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  height: 150px;
+  position: relative;
 }
 .centerForNextHeading{
   font-size: 17px;
@@ -100,6 +98,36 @@ body{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.centerForAddButton{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 60% ;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.containerForButton2{
+  display:none;
+  height: 100px;
+  position: relative;
+}
+
+.containerForResetButton{
+  display:none;
+  height: 100px;
+  position: relative;
+}
+.centerForResetButton{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 60% ;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
 .error{
   font-style: italic;
   font-size: 12px;
@@ -114,7 +142,7 @@ input {
   border: white;
   height: 7vh;
   background-color:slategray;
-  color: #000000;
+  color: #ffffff;
   width: 69vw;
 }
 p {
