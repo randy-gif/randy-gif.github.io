@@ -19,6 +19,14 @@ export class inspectionCalculator{
         return dateObj;
     } 
 
+    AddMoreDownTime(downTime, timeResumed){
+        let dateObj = new Date;
+        this.#nextInspection.setTime(this.#nextInspection.getTime() +
+        this.calculateDownTime(downTime, timeResumed));
+        dateObj = this.#nextInspection;
+        return dateObj;
+    }
+
     formatTime(time){
         let amOrpm = "NaN";
         let hours = time.getHours();
@@ -92,6 +100,10 @@ export class inspectionCalculator{
         document.getElementById("lastInspectionDate").value = dateFormat;
         document.getElementById("donwTimeDate").value = dateFormat;
         document.getElementById("timeResumedDate").value = dateFormat;
+    }
+
+    getTime(){
+        return this.#nextInspection.getTime();
     }
 }
 
