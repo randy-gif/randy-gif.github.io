@@ -1,14 +1,17 @@
 # randy-gif.github.io
-    ABOUT
-this is my very first project in javaScript. I created this program to help a person I was training to add down-time to her hourly inspections. <br/>
 
-    EXAMPLE:
-let iTime = 3:45pm 6/17/23; // time of last inspection / or time when production first started <br/>
-let downTime = 4:00pm 6/17/23; // time the room went down <br/>
-let timeResumed = 4:30pm 6/17/23; // time when the production resumed <br/>
-let totalDownTime = timeResumed - downTime; // in this case total downTime equals 30 minutes <br/>
-let nextInspectionDueTime = iTime + totalDownTime + 60 minutes; // in this case nextInspectionDueTime is equal to 5:15pm 6/17/23 <br/>
-retrun nextInspectionDueTime; // 5:15pm 6/17/23 <br/>
+## ABOUT
+This is my very first project in JavaScript. I created this program to help a person I was training to add downtime to her hourly inspections.
+
+## EXAMPLE
+```javascript
+let iTime = "3:45pm 6/17/23"; // time of last inspection / or time when production first started
+let downTime = "4:00pm 6/17/23"; // time the room went down
+let timeResumed = "4:30pm 6/17/23"; // time when the production resumed
+let totalDownTime = timeResumed - downTime; // in this case, total downtime equals 30 minutes
+let nextInspectionDueTime = iTime + totalDownTime + 60; // in this case, nextInspectionDueTime is equal to "5:15pm 6/17/23"
+return nextInspectionDueTime; // "5:15pm 6/17/23"
+
 
     DEFENITIONS:
 Down-Time - the amount of time the room was not running. <br/>
