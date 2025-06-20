@@ -29,7 +29,7 @@ document.getElementById("submitBtn").onclick = () => {
             let downTimeError = new DownTimeError("last inspection time is greater than down Time");
             throw downTimeError;
         }
-        else if (downTime.getTime() >= (lastInspection.getTime() + (60 * 60 * 1000))){
+        else if (((downTime.getTime())+ (10)) > (lastInspection.getTime() + (60 * 60 * 1000))){
            let lastInspectionError = new LastInspectionError("down time must be within one hour of last inspection");
            throw lastInspectionError;
         }
